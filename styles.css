@@ -1,14 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 0;
-  margin: 0;
   background-color: black;
   color: white;
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+form {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+input:not([type='checkbox']):not([type='radio']),
+button,
+textarea {
+  display: block;
+  font: inherit;
+  color: inherit;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+fieldset {
+  border: 0;
+}
+
+button {
+  color: black;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 5%;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact-card {
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  max-width: fit-content;
+  padding: 3rem;
+  border-radius: 10%;
+  text-align: left;
 }
