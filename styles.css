@@ -69,3 +69,23 @@ button:hover {
   border-radius: 10%;
   text-align: left;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  img {
+    width: 80%;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  form {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .contact-card {
+    padding: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
