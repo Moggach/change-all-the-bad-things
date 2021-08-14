@@ -10,23 +10,27 @@ body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
+
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
+}
+
+img {
+  width: 80%;
 }
 
 h2 {
-  margin-top: 2rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 form {
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  margin-top: 0;
+  font-size: 1rem;
 }
 
 input:not([type='checkbox']):not([type='radio']),
@@ -60,6 +64,8 @@ button:hover {
 
 .contact-card {
   margin: 0 auto;
+  padding: 1.5rem;
+  font-size: 0.8rem;
   background-color: rgb(255, 255, 255);
   color: black;
   margin-top: 2rem;
@@ -71,22 +77,22 @@ button:hover {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.18);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
-  img {
-    width: 80%;
-  }
+
   h2 {
+    font-size: 3rem;
+  }
+
+  form {
+    margin-top: 1rem;
     font-size: 1.5rem;
   }
-  form {
-    margin-top: 0;
-    font-size: 1rem;
-  }
+
   .contact-card {
-    padding: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
+    padding: 3rem;
   }
 }

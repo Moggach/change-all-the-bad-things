@@ -10,6 +10,7 @@ This project is a contact form for a fictional social justice group.
 The user inputs from the contact form are displayed on a card below on submit.
 
 Site header:
+
 <img
         src="head.png"
         alt=""
