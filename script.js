@@ -17,18 +17,15 @@ function validateEmailAdress() {
   }
 }
 
-/*function validatePhoneNumber() {
+function validatePhoneNumber() {
   const phoneNumber = document.getElementById('phone').value;
-  console.log(phoneNumber);
-  let pattern =
-    '^s*(?(020[7,8]{1})?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3})?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})s*$';
-
-  console.log(pattern.match(phoneNumber));
-  if (!regEx.test(phoneNumber)) {
+  const input =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (input.test(phoneNumber) == false) {
     alert('Please enter a valid phone number');
     return false;
-  
-}*/
+  }
+}
 
 function validateDateofBirth() {
   const dateOfBirth = document.getElementById('dateofbirth').value;
@@ -79,7 +76,8 @@ function onSubmit(e) {
   if (
     validateCheckboxes() == false ||
     validateEmailAdress() == false ||
-    validateDateofBirth() == false
+    validateDateofBirth() == false ||
+    validatePhoneNumber() == false
   ) {
     return false;
   }
