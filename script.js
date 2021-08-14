@@ -19,9 +19,9 @@ function validateEmailAdress() {
 
 function validatePhoneNumber() {
   const phoneNumber = document.getElementById('phone').value;
-  const input =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (input.test(phoneNumber) == false) {
+
+  let onlyNumbers = phoneNumber.replace(/[^0-9]/g, '');
+  if (onlyNumbers.length != 11) {
     alert('Please enter a valid phone number');
     return false;
   }
