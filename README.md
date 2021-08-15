@@ -31,5 +31,6 @@ User details:
       />
 
 I wrote a series of functions to check and validate the form inputs.
+The requirements for validation for phone number and email address could be more stringent.
 
-If I had more time on this project I would like to add a database component. I would also like to add authorisation/authentification 🔑
+If I had more time on this project I would like to add a database layer. I would also like to add authentification to view user inputs 🔑 Potentially I could also look at generating an automated email acknowledging reciept to the user and/or alerting site owner to a submission.
