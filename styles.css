@@ -63,18 +63,16 @@ button:hover {
 }
 
 .contact-card {
+  width: 80%;
   margin: 0 auto;
   padding: 1.5rem;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   background-color: rgb(255, 255, 255);
   color: black;
   margin-top: 2rem;
-  font-size: 1.5rem;
-  max-width: fit-content;
-  padding: 3rem;
   border-radius: 10%;
   text-align: left;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.18);
+  box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.18);
 }
 
 @media only screen and (min-width: 600px) {
@@ -92,6 +90,7 @@ button:hover {
   }
 
   .contact-card {
+    width: 50%;
     font-size: 1.5rem;
     padding: 3rem;
   }
