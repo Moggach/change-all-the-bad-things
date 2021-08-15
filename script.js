@@ -1,3 +1,12 @@
+/*checking that the user has entered their named*/
+function validateName() {
+  const name = document.getElementById('name').value;
+  if (name == '') {
+    alert('Please enter your name');
+    return false;
+  }
+}
+
 /*checking that the user has selected at least one contact method*/
 function validateCheckboxes() {
   const email = document.getElementById('contactChoice1');
@@ -85,10 +94,11 @@ function onSubmit(e) {
   e.preventDefault();
 
   if (
-    validateCheckboxes() == false ||
+    validateName() == false ||
     validateEmailAdress() == false ||
+    validatePhoneNumber() == false ||
     validateDateofBirth() == false ||
-    validatePhoneNumber() == false
+    validateCheckboxes() == false
   ) {
     return false;
   }
