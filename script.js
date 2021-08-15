@@ -1,4 +1,4 @@
-/*checking that the user has entered their named*/
+//checking that the user has entered their named
 function validateName() {
   const name = document.getElementById('name').value;
   if (name == '') {
@@ -7,7 +7,7 @@ function validateName() {
   }
 }
 
-/*checking that the user has selected at least one contact method*/
+//checking that the user has selected at least one contact method
 function validateCheckboxes() {
   const email = document.getElementById('contactChoice1');
   const phone = document.getElementById('contactChoice2');
@@ -18,7 +18,7 @@ function validateCheckboxes() {
   }
 }
 
-/*checking that the user has entered a valid email address*/
+//checking that the user has entered a valid email address
 function validateEmailAdress() {
   const emailAddress = document.getElementById('email').value;
 
@@ -28,7 +28,7 @@ function validateEmailAdress() {
   }
 }
 
-/*checking that the user has entered at least 11 digits*/
+//checking that the user has entered at least 11 digits
 function validatePhoneNumber() {
   const phoneNumber = document.getElementById('phone').value;
 
@@ -39,7 +39,7 @@ function validatePhoneNumber() {
   }
 }
 
-/*checking that the user has entered a value for date of birth*/
+//checking that the user has entered a value for date of birth
 function validateDateofBirth() {
   const dateOfBirth = document.getElementById('dateofbirth').value;
   if (dateOfBirth == '') {
@@ -48,7 +48,7 @@ function validateDateofBirth() {
   }
 }
 
-/*checking which contact method user selected*/
+//checking which contact method user selected
 function checkContactMethod() {
   const contact = document.getElementById('contactChoice1').checked;
   if (contact == true) {
@@ -57,7 +57,7 @@ function checkContactMethod() {
   return 'Phone';
 }
 
-/*generate user card using input data on submission of the form*/
+//generate user card using input data on submission of the form
 function showInput() {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
@@ -84,12 +84,12 @@ function showInput() {
   card.innerHTML = input;
 }
 
-/*function to clear out form fields - called within onSubmit function*/
+//function to clear out form fields - called within onSubmit function
 function formReset() {
   document.getElementById('form').reset();
 }
 
-/*function run on submit that runs the above functions and prevents the page refreshing*/
+//function run on submit that runs the above functions and prevents the page refreshing
 function onSubmit(e) {
   e.preventDefault();
 
@@ -107,5 +107,5 @@ function onSubmit(e) {
   alert('Thank you for your submission. We will be in touch shortly');
 }
 
-/*adding event listener to submit button*/
+//adding event listener to submit button
 document.getElementById('submit').addEventListener('click', onSubmit);
