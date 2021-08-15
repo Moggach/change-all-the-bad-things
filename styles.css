@@ -57,11 +57,6 @@ button {
   border-radius: 5%;
 }
 
-button:hover {
-  background-color: black;
-  color: white;
-}
-
 .contact-card {
   width: 80%;
   margin: 0 auto;
@@ -86,6 +81,14 @@ button:hover {
   form {
     margin-top: 1rem;
     font-size: 1.5rem;
+  }
+
+  input[type='radio'] {
+    transform: scale(2);
+  }
+  button:hover {
+    background-color: black;
+    color: white;
   }
 
   .contact-card {
