@@ -53,7 +53,10 @@ function showInput() {
 
   const input = `
   <div class="contact-card">
-  📌
+  <img style="width:3.5rem"
+  src="1F4CC.svg"
+  alt=""
+/>
   <p>Name: ${name}<p>
   <p>Date of birth: ${dob}</p>
   <p>Email: ${email}</p>

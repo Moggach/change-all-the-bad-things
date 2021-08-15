@@ -66,13 +66,12 @@ button:hover {
   width: 80%;
   margin: 0 auto;
   padding: 1.5rem;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   background-color: rgb(255, 255, 255);
   color: black;
   margin-top: 2rem;
   border-radius: 10%;
   text-align: left;
-  box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.18);
 }
 
 @media only screen and (min-width: 600px) {
