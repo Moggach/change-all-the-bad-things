@@ -49,6 +49,7 @@ fieldset {
 }
 
 button {
+  background-color: black;
   color: white;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
@@ -87,8 +88,8 @@ button {
     transform: scale(2);
   }
   button:hover {
-    background-color: black;
-    color: white;
+    color: black;
+    background-color: white;
   }
 
   .contact-card {
